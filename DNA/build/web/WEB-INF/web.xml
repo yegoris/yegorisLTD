@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DNA</servlet-name>
+        <servlet-class>org.DNA.yi.DNA</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DNAdna</servlet-name>
+        <servlet-class>ivanbadhidharma.com.DNAdna</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DNA</servlet-name>
+        <url-pattern>/DNA</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DNAdna</servlet-name>
+        <url-pattern>/DNAdna</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
